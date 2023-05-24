@@ -9,9 +9,20 @@
  * • кратные и трём, и пяти одновременно — на fizzbuzz.
  * 
 */
-
+// 1- проверка на натуральность  2- проверка на кратность и вывод физзбазз
 function fizzBuzz(num) {
-    // Напишите код здесь
+    const arr = [];
+    for (let i = 1; i <= num; i++) {
+        if (i % 15 === 0) {
+          console.log("fizzbuzz")
+        } else if (i % 3 === 0) {
+          console.log("fizz");
+        } else if (i % 5 === 0) {
+          console.log("buzz");
+        } else {
+        console.log(i);
+        }
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

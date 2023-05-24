@@ -7,11 +7,8 @@
  * 
 */
 
-function uniq(arr) {
-    // Напишите код здесь
-}
 
-// Протестируйте решение, вызывая функцию с разными аргументами:
+const uniq = (arr) => Array.from(new Set(arr));
 
 console.log(uniq([1, 2, 5, 4, 2])); // [1, 2, 5, 4]
 console.log(uniq([3, 3, 3, 5])); // [3, 5]
